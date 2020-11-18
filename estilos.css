@@ -1,0 +1,295 @@
+:root {
+  --grey-color: #efefef;
+  --primary-color: #1b2127;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+}
+
+
+header {
+  background-color: var(--primary-color);
+  display: block;
+  text-align:center;
+  height: 120px;
+}
+
+header img {
+  width: 60%;
+  padding-top: 20px;
+}
+
+header ol {
+  display: flex;
+  justify-content: space-around;
+}
+
+header li {
+  list-style: none;
+}
+
+header a {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background-color: var(--primary-color);
+  text-align: center;
+  
+}
+
+.hero h1{
+  
+  background-color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.hero strong {
+  color: #026fff;
+}
+
+.portfolio {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+h2 {
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+
+
+.project {
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+  background: white;
+  display: inline-block;
+  align-items: center;
+}
+
+.project-details {
+  width: 100%;
+}
+
+.project-title {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+}
+
+.project-imageContainer{
+  display: flex;
+  justify-content: end;
+}
+
+.project-imageContainer img{
+  width: 100%;
+}
+
+.project-course,
+.project-date,
+.project-url {
+    margin: 10px 0;
+}
+
+.project-description {
+    font-size: 20px;
+}
+
+.project strong {
+  font-family: 'Fjalla One', san-serif;
+}
+
+
+#eventos h2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+.event-list {
+  display: block;
+}
+
+.event {
+  padding: 10px;
+  width: 95%;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f4fbff;
+}
+
+.event img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-detail {
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: white;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.event-description {
+  text-align: left;
+}
+
+.event-url {
+  color: #056fff;
+  border:  1px solid;;
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.event-url:hover {
+  background-color: var(--grey-color);
+}
+
+
+.contact {
+  background-color: var(--primary-color);
+  color: white;
+  height: 150px;
+  display: flex;;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+.social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  background-size: 50px 50px;
+}
+
+.social-link.instagram {
+  background-image: url('images/instagram.svg');
+}
+
+.social-link.facebook {
+  background-image: url('images/facebook.svg');
+}
+
+.social-link.github {
+  background-image: url('images/github.svg');
+}
+
+.form-email input{
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 5px 20px 5px 25px;
+  background-image: url('images/envelope.svg');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+
+.form-email button {
+  display: block;
+  margin-top: 10px;
+  background: transparent;
+  color: white;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.form-email h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+footer {  
+  background-color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+
+footer p {
+  margin: 0;
+  padding: 7px;
+  color: white;
+
+}
+
+@media screen and (min-width: 767px) {
+  
+  header {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  header img {
+    width: 450px;
+  }
+
+  header ol {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    justify-content: space-around;
+  }
+
+
+  .project-details {
+    width: 40%;
+  }
+
+  .project-imageContainer{
+    width: 40%;
+  }
+  
+  .project {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .contact, footer {
+    padding: 0 10%;
+  }
+
+  .event-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
