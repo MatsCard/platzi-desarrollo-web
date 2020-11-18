@@ -4,16 +4,16 @@
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 
 header {
-  background-color: var(--primary-color);
   display: block;
-  text-align:center;
   height: 120px;
+  background-color: var(--primary-color);
+  text-align:center;
 }
 
 header img {
@@ -32,25 +32,23 @@ header li {
 
 header a {
   font-size: 16px;
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
 
 .hero {
   display: flex;
-  align-items: center;
   height: 100px;
-  background-color: var(--primary-color);
+  align-items: center;
   text-align: center;
-  
+  background-color: var(--primary-color);
 }
 
-.hero h1{
-  
-  background-color: var(--primary-color);
-  margin: 0;
+.hero h1{  
   padding: 0;
+  margin: 0;
   color: white;
+  background-color: var(--primary-color);
 }
 
 .hero strong {
@@ -64,24 +62,24 @@ header a {
 
 
 h2 {
+  margin-bottom: 40px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
   color: #026fff;
   text-transform: uppercase;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bold;
-  font-size: 24px;
-  margin-bottom: 40px;
 }
 
 
 
 .project {
-  border: 1px solid gray;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  padding: 20px;
-  background: white;
   display: inline-block;
   align-items: center;
+  padding: 20px;
+  margin-bottom: 15px;
+  background: white;
+  border: 1px solid gray;
+  border-radius: 10px;
 }
 
 .project-details {
@@ -89,10 +87,9 @@ h2 {
 }
 
 .project-title {
-    font-size: 30px;
-    margin-top: 0;
-    margin-bottom: 10px;
-
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 30px;
 }
 
 .project-imageContainer{
@@ -131,11 +128,11 @@ h2 {
 }
 
 .event {
-  padding: 10px;
   width: 95%;
+  padding: 10px;
   flex-shrink: 0;
-  border-radius: 10px;
   overflow: hidden;
+  border-radius: 10px;
   background: #f4fbff;
 }
 
@@ -146,12 +143,12 @@ h2 {
 }
 
 .event-detail {
-  margin: 20px 40px;
-  margin-top: -40px;
-  background-color: white;
   position: relative;
   padding: 20px;
+  margin: 20px 40px;
+  margin-top: -40px;
   text-align: center;
+  background-color: white;
   border-radius: 10px;
 }
 
@@ -160,10 +157,10 @@ h2 {
 }
 
 .event-url {
-  color: #056fff;
-  border:  1px solid;;
   padding: 5px 20px;
+  color: #056fff;
   text-decoration: none;
+  border:  1px solid;;
   border-radius: 5px;
 }
 
@@ -173,14 +170,14 @@ h2 {
 
 
 .contact {
-  background-color: var(--primary-color);
-  color: white;
-  height: 150px;
   display: flex;;
   align-items: center;
   justify-content: space-between;
+  height: 150px;
   padding: 10px;
+  color: white;
   font-size: 0.9em;
+  background-color: var(--primary-color);
 }
 
 .social-link {
@@ -204,25 +201,25 @@ h2 {
 }
 
 .form-email input{
-  border-color: gray;
-  border-style: solid;
-  border-radius: 5px;
   padding: 5px 20px 5px 25px;
   background-image: url('images/envelope.svg');
   background-size: 15px 15px;
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: 5px;
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
 }
 
 .form-email button {
   display: block;
-  margin-top: 10px;
-  background: transparent;
-  color: white;
-  padding: 10px 0;
-  border-radius: 5px;
   width: 100px;
+  padding: 10px 0;
+  margin-top: 10px;
+  color: white;
+  background: transparent;
+  border-radius: 5px;
 }
 
 .form-email h3 {
@@ -231,25 +228,23 @@ h2 {
 }
 
 footer {  
-  background-color: var(--primary-color);
-  margin: 0;
   padding: 0;
+  margin: 0;
+  background-color: var(--primary-color);
 }
 
 footer p {
   margin: 0;
   padding: 7px;
   color: white;
-
 }
 
-@media screen and (min-width: 767px) {
-  
+@media screen and (min-width: 767px) {  
   header {
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 0 auto;
   }
   
   header img {
